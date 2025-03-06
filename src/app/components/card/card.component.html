@@ -1,0 +1,50 @@
+<div class="container">
+  <header class="container-header">
+    <img src="assets/imgs/bola-pokedex.png" alt="" />
+
+    <div class="container-header--divPokedex">
+      <h2>PokéDex</h2>
+      <img
+        class="container-header--ImagePokebola"
+        src="assets/imgs/pokebola.png"
+        alt=""
+      />
+    </div>
+  </header>
+
+  <main class="container-Main">
+    <div class="container-Main--divContainerCard">
+      <div class="card">
+        <div class="card__title">
+          <h3>{{ pokemon.name | transformador : pokemon.id }}</h3>
+        </div>
+
+        <div class="card__body">
+          <img
+            [src]="pokemon.sprites.front_default"
+            height="150"
+            alt="pokemon"
+            srcset=""
+          />
+        </div>
+
+        <div class="card__stats">
+          <span class="card__stats__type" *ngFor="let t of pokemon.types">
+            {{ t.type.name | uppercase | lowercase }}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-Main--divimput">
+      <img src="assets/imgs/setas.png" alt="" />
+      <input
+        class="container-Main--imput"
+        type="text"
+        (input)="getPokemon($any($event.target).value)"
+        placeholder="Digite o nome do Pokemon"
+      />
+      <img src="assets/imgs/buttons.png" alt="" />
+    </div>
+  </main>
+</div>

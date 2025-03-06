@@ -1,0 +1,139 @@
+.container {
+  margin-left: 20vw;
+  margin-right: 20vw;
+
+  border: solid black 3px;
+  border-radius: 10px;
+
+  background-color: #ff3234;
+}
+
+.container-header {
+  padding-left: 10vw;
+  padding-right: 10vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container-header--divPokedex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+.container-header--ImagePokebola {
+  width: 80px;
+}
+
+.container-Main {
+  padding-left: 10vw;
+  padding-right: 10vw;
+
+  padding-top: 40px;
+}
+
+.container-Main--divContainerCard {
+  height: 70vh;
+
+  border: solid black 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ffffff;
+}
+
+.container-Main--divimput {
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  border: solid black 3px;
+  border-radius: 10px;
+
+  background-color: #636363;
+}
+
+.container-Main--imput {
+  width: 200px;
+  height: 70px;
+  padding-left: 20px;
+
+  color: #031900;
+  background-color: #8ec840;
+}
+
+.container-Main--imput::placeholder {
+  color: #031900;
+}
+
+.card {
+  border: 1px solid black;
+  width: 20vw;
+  height: 55vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #232323;
+  border-radius: 10px;
+}
+
+.card__title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.card__title > h3 {
+  color: white;
+}
+
+.card__body {
+  background-color: #616161;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70%;
+}
+
+.card__stats {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card__stats__type {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+
+  background-color: coral;
+  border-radius: 5px;
+
+  padding: 5px;
+  margin-right: 4px;
+}
+
+.card__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
